@@ -115,12 +115,147 @@ in:
 as:
 
 
+file handling
 
+working with flat files ( csv conf  ini  log txt bat ... )
+
+working with third party files (  docx pptx pdf zip  ..... )
 
 
 
 
  
+working with flat files
+---------------------
+
+
+opening the file
+------------------
+syntax: object = open(filename,mode)
+
+modes:
+read mode  :  r
+write mode :  w
+append mode:  a
+
+fr = open('customers.txt','r')
+file should exist in order to read the file
+
+fw = open('customers.txt','w')
+case1: if the file is not existing ..... file gets created first
+case2: if the file is already existing.. it overwrites the data
+
+fa = open('customers.txt','a')
+case1: if the file is not existing ..... file gets created first
+case2: if the file is already existing.. it appends the data to the file
+
+
+closing the file
+------------------
+fobj.close()
+
+
+
+
+
+
+
+
+read opeartions
+------------------
+
+- reading the file line by line
+- fobj.readlines()  -------------> return the list
+- fobj.read()       -------------> return the string
+- read the file using csv library
+- pandas library
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+exception handling
+------------------
+
+There are 2 types of errors.
+
+1. syntax error
+2. semantic error or logical errors or runtime errors
+
+Handling the errors that occurs during the runtime is known as exception handling.
+
+try
+except
+else
+finally
+
+
+library | package | module | routine
+-------------------------------------
+Every library contains set of methods
+
+There are 2 types of libraries
+
+
+1. builtin libraries
+---------------------
+builtin libraries which are generally used( OS activities , string manipulaations, email,datetime a.....) are installed with python
+
+anaconda python : 8000+ libraries are installed
+default IDLE    : 3000+ libraires are installed
+
+import sys
+print(sys.executable)
+
+path : C:\Users\gsripath\anaconda3\Lib
+
+2. third party libraries
+-----------------------
+Depending on the requirement(cloud automations, ML , DL, analytics, web dev ....) developer has to find and install the third party library from
+
+- installing using pip tool
+- downloading and installing it manually.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
